@@ -18,4 +18,13 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    /**
+     * テスト環境でない場合はエラー
+     * @test
+     */
+    public function is_in_test_env()
+    {
+        $this->assertEquals('testing', $this->app->environment());
+    }
 }
