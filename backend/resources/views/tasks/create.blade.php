@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('styles')
 @include('share.flatpickr.styles')
